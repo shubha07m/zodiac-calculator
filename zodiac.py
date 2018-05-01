@@ -1,6 +1,6 @@
 def dobprint():
 
-    d = int(raw_input("Please enter your date of your birth in DD format:\n"))
+    d = int(input("Please enter your date of your birth in DD format:\n"))
     while d > 31:
         d = int(raw_input("Please enter the date in range:\n"))
 
@@ -8,7 +8,7 @@ def dobprint():
             break
 
 
-    m = int(raw_input("Please enter your month of your birth in MM format:\n"))
+    m = int(input("Please enter your month of your birth in MM format:\n"))
     while m > 12:
         m = int(raw_input("Please enter the month in range:\n"))
         if m < 12:
@@ -21,13 +21,13 @@ def dobprint():
 
 
 
-    y = int(raw_input("Please enter your year of your birth in YYYY:\n"))
+    y = int(input("Please enter your year of your birth in YYYY:\n"))
     while y > 2016:
-        y = int(raw_input("Please enter the year in range:\n"))
+        y = int(input("Please enter the year in range:\n"))
         if y < 2016:
             break
 
-    print "So you born on \t" + str(d) + "th  " + month + "  " + str(y) + ""
+    print ("So you born on " + str(d) + "th  " + month + "  " + str(y) + "")
     return m,d
 
 
@@ -59,7 +59,7 @@ def zodiac():
         z = "Aquarius"
     else:
         z = "Pisces"
-    print "your zodiac sign is "+z+" "
+    print ("your zodiac sign is "+z+" ")
 
 
 
